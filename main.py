@@ -64,13 +64,16 @@ root.geometry(str(width_window)+"x"+str(height_window)+"+"+str(pwidth)+"+"+str(p
 ##########
 '''
 tittle_frm = tk.Label(root, text="Organizador de Archivos", font=("Arial", 12), pady=5)
-tittle_frm.grid(row=0, column=0)
+tittle_frm.grid(row=0, column=0, columnspan=2)
 
 container = tk.Frame(root, padx=10, pady=10)  # , bg="#D9D9D9"
-container.grid(row=1, column=0)
+container.grid(row=1, column=0, columnspan=2)
 
 watermark = tk.Label(root, text="Developed by MFES")
 watermark.grid(row=2, column=0)
+
+version_lbl = tk.Label(root, text="Version v1.0.1")
+version_lbl.grid(row=2, column=1)
 
 # StringVar
 ruta_stv = tk.StringVar()
@@ -93,7 +96,7 @@ var_code_chk = tk.BooleanVar()
 
 # List
 extensionAudio = ['.mp3', '.ogg', '.wav', '.flac']
-extensionImages = ['.jpg', '.jpeg', '.png', '.gif', '.webp', '.ico', '.svg']
+extensionImages = ['.jpg', '.jpeg', '.png', '.gif', '.webp', '.ico', '.svg', '.jfif']
 extensionVideos = ['.mp4', '.avi', '.mkv', '.flv', '.mov']
 extensionWord = ['.doc', '.docx', '.docm', '.odt', '.rtf']
 extensionExcel = ['.xlsx', '.xlsm', '.xlsb', '.xltx', '.xls', '.xltm', '.csv', '.tsv', '.ods']

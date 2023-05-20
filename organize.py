@@ -39,7 +39,7 @@ def organize_files(ruta_actual, checks_options):
 
         # File extensions
         extension_audio = ['.mp3', '.ogg', '.wav', '.flac']
-        extension_images = ['.jpg', '.jpeg', '.png', '.gif', '.webp', '.ico', '.svg']
+        extension_images = ['.jpg', '.jpeg', '.png', '.gif', '.webp', '.ico', '.svg', '.jfif']
         extension_videos = ['.mp4', '.avi', '.mkv', '.flv', '.mov']
         extension_word = ['.doc', '.docx', '.docm', '.odt', '.rtf']
         extension_excel = ['.xlsx', '.xlsm', '.xlsb', '.xltx', '.xls', '.xltm', '.csv', '.tsv', '.ods']
